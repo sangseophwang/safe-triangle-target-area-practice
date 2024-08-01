@@ -1,0 +1,15 @@
+@import "styles/utils/variables";
+
+.body {
+  color: $c-white;
+  background-color: $c-black;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100%;
+}
