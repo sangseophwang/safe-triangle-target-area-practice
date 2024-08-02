@@ -1,0 +1,27 @@
+'use client';
+import clsx from 'clsx';
+
+import MenuItem from '@/components/templates/MenuItem';
+import MenuStyle from '@/components/templates/styles/Menu.module.scss';
+import { TypeMenu } from '@/types/menu';
+
+interface TypeMenuList {
+  className?: string;
+  list?: Array<TypeMenu>;
+}
+
+const Menu = ({ className, list }: TypeMenuList) => {
+  if (!list) return null;
+
+  return (
+    <menu className={clsx(MenuStyle.container, className)}>
+      {list.map((item, index) => (
+        <li key={index} className={MenuStyle.item}>
+          <MenuItem {...item} />
+        </li>
+      ))}
+    </menu>
+  );
+};
+
+export default Menu;

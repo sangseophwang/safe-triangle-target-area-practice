@@ -1,0 +1,23 @@
+@import "styles/utils/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 1rem rgba($c-black, 0.2);
+}
+
+.item {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+
+  &:hover {
+    menu {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

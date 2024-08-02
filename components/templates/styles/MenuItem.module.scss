@@ -1,0 +1,31 @@
+@import "styles/utils/variables";
+
+.container {
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+
+  min-height: 5rem;
+  padding: 1rem;
+}
+
+.title {
+  margin-right: 4rem;
+}
+
+.secondary {
+  position: absolute;
+  left: 98%;
+  top: 0.5rem;
+  z-index: 1;
+  overflow: hidden;
+
+  background-color: $c-white;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity $ease-dur ease-in-out, visibility $ease-dur ease-in-out;
+}
