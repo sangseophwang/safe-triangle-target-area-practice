@@ -1,0 +1,28 @@
+@import "styles/utils/variables";
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  rotate: 270deg;
+
+  svg path{
+    stroke: $c-black;
+  }
+}
+
+.button {
+  transition: 0.2s;
+
+  &:hover {
+    background-color: rgba($c-black, 0.1);
+    text-shadow: 0.05rem 0 0 $c-black;
+
+    .icon {
+      svg path{
+        stroke-width: 1.2;
+      }
+    }
+  }
+}
