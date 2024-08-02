@@ -1,0 +1,50 @@
+{
+  "list": [
+    {
+      "title": "New task"
+    },
+    {
+      "title": "Get info"
+    },
+    {
+      "title": "Change workspace name..."
+    },
+    {
+      "title": "Attributes",
+      "items": [
+        {
+          "title": "Name"
+        },
+        {
+          "title": "Lists"
+        },
+        {
+          "title": "Status"
+        },
+        {
+          "title": "Assignees"
+        }
+      ]
+    },
+    {
+      "title": "Show task IDS"
+    },
+    {
+      "title": "Show visualization options"
+    },
+    {
+      "title": "Export",
+      "items": [
+        {
+          "title": "Export to CSV"
+        },
+        {
+          "title": "Export to JSON"
+        },
+        {
+          "title": "Export to xlsx"
+        }
+      ]
+    }
+  ]
+}
