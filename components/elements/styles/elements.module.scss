@@ -16,8 +16,8 @@
   transition: 0.2s;
 
   &:hover {
-    background-color: rgba($c-black, 0.1);
-    text-shadow: 0.05rem 0 0 $c-black;
+    background-color: #f2f2f2;
+    text-shadow: 0.04rem 0 0 $c-black;
 
     .icon {
       svg path{
