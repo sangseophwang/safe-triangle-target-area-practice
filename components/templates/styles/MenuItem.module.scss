@@ -1,5 +1,7 @@
 @import "styles/utils/variables";
 
+$width: var(--menu-width);
+
 .container {
   box-sizing: border-box;
 
@@ -16,16 +18,27 @@
   margin-right: 4rem;
 }
 
-.secondary {
+.subMenu {
   position: absolute;
-  left: 98%;
-  top: 0.5rem;
+  left: 100%;
+  top: 0;
   z-index: 1;
-  overflow: hidden;
 
   background-color: $c-white;
 
   opacity: 0;
   visibility: hidden;
   transition: opacity $ease-dur ease-in-out, visibility $ease-dur ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: calc(-1 * $width);
+
+    width: $width;
+    height: 100%;
+
+    background-color: rgba(tomato, 0.1);
+    clip-path: polygon(80% 30px, 100% 100%, 100% 0);
+  }
 }
