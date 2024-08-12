@@ -1,4 +1,6 @@
 'use client';
+import { ForwardedRef } from 'react';
+
 import clsx from 'clsx';
 
 import MenuItem from '@/components/templates/MenuItem';
@@ -7,14 +9,13 @@ import { TypeMenu } from '@/types/menu';
 
 interface TypeMenuList {
   className?: string;
-  list?: Array<TypeMenu>;
+  menuRef?: ForwardedRef<HTMLMenuElement>;
+  list: Array<TypeMenu>;
 }
 
-const Menu = ({ className, list }: TypeMenuList) => {
-  if (!list) return null;
-
+const Menu = ({ className, list, menuRef }: TypeMenuList) => {
   return (
-    <menu className={clsx(MenuStyle.container, className)}>
+    <menu ref={menuRef} className={clsx(MenuStyle.container, className)}>
       {list.map((item, index) => (
         <li key={index} className={MenuStyle.item}>
           <MenuItem {...item} />
