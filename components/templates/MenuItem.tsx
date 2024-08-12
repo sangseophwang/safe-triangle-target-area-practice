@@ -14,7 +14,7 @@ const MenuItem = ({ title, items }: TypeMenu) => {
         {!!items && <Icon svg={IconArrow} />}
       </Button>
 
-      <Menu className={MenuItemStyle.secondary} list={items} />
+      {!!items && <Menu className={MenuItemStyle.subMenu} list={items} />}
     </>
   );
 };
