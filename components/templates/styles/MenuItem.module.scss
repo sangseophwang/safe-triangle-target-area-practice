@@ -1,6 +1,8 @@
+@use 'sass:math';
 @import "styles/utils/variables";
 
-$width: var(--menu-width);
+$menu-width: var(--menu-width);
+$menu-item-height: var(--menu-item-height);
 
 .container {
   box-sizing: border-box;
@@ -33,12 +35,12 @@ $width: var(--menu-width);
   &::after {
     content: '';
     position: absolute;
-    left: calc(-1 * $width);
+    left: calc(-1 * $menu-width);
 
-    width: $width;
+    width: $menu-width;
     height: 100%;
 
     background-color: rgba(tomato, 0.1);
-    clip-path: polygon(80% 30px, 100% 100%, 100% 0);
+    clip-path: polygon(percentage(math.div(2, 3)) $menu-item-height, 100% $menu-item-height, 100% 100%);
   }
 }
