@@ -7,15 +7,17 @@ import MenuData from '@/mock/menu.json';
 
 const Navigation = () => {
   const menuRef = useRef<HTMLMenuElement>(null);
+  const menuItemRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
-    if (!menuRef.current) return;
+    if (!menuRef.current || !menuItemRef.current) return;
     menuRef.current.style.setProperty('--menu-width', `${menuRef.current.clientWidth}px`);
+    menuRef.current.style.setProperty('--menu-item-height', `${menuItemRef.current.clientHeight}px`);
   }, []);
 
   return (
     <nav>
-      <Menu menuRef={menuRef} list={MenuData.list} />
+      <Menu menuRef={menuRef} menuItemRef={menuItemRef} list={MenuData.list} />
     </nav>
   );
 };
