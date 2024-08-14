@@ -1,10 +1,12 @@
 import BaseLayout from '@/components/common/BaseLayout';
-import Navigation from '@/components/layout/Navigation';
+import FixedTriangleTargetArea from '@/components/layout/FixedTriangleTargetArea';
+import SafeTriangleTargetArea from '@/components/layout/SafeTriangleTargetArea';
 
 const Page = () => {
   return (
     <BaseLayout>
-      <Navigation />
+      <SafeTriangleTargetArea />
+      <FixedTriangleTargetArea />
     </BaseLayout>
   );
 };
