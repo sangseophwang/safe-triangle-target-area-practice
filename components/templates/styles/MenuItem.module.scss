@@ -3,6 +3,7 @@
 
 $menu-width: var(--menu-width);
 $menu-item-height: var(--menu-item-height);
+$percentage-x: var(--percentage-x);
 
 .container {
   box-sizing: border-box;
@@ -41,6 +42,6 @@ $menu-item-height: var(--menu-item-height);
     height: 100%;
 
     background-color: rgba(tomato, 0.1);
-    clip-path: polygon(percentage(math.div(2, 3)) $menu-item-height, 100% $menu-item-height, 100% 100%);
+    clip-path: polygon($percentage-x $menu-item-height, 100% $menu-item-height, 100% 100%);
   }
 }
