@@ -8,6 +8,7 @@ const FixedTriangleTargetArea = () => {
   const { updateCursorLocation, ...menuRefs } = useMenu();
   return (
     <nav className={SafeTriangleTargetAreaStyle.container}>
+      <h2 className={SafeTriangleTargetAreaStyle.title}>Fixed Triangle Target Area</h2>
       <Menu list={MenuData.list} {...menuRefs} />
     </nav>
   );
