@@ -1,5 +1,7 @@
 # Safe Triangle Target Area
 
+<img width="790" alt="스크린샷 2024-09-04 오후 8 16 57" src="https://github.com/user-attachments/assets/c81096b2-3fc6-4f5e-948e-f8af77a86c36">
+
 1. [Safe Triangle Target Area란? 🚀](#1-safe-triangle-target-area란-)
 2. [구현 기능 📍](#2-구현-기능-)
 3. [프로젝트 설치 및 실행 ✨](#3-프로젝트-설치-및-실행-)
